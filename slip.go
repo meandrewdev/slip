@@ -31,10 +31,10 @@ func NewWriter(writer io.Writer) *Writer {
 }
 
 const (
-	END     = 0300 /* 0xC0 indicates end of packet */
-	ESC     = 0333 /* 0xDB, indicates byte stuffing */
-	ESC_END = 0334 /* 0xDC, ESC ESC_END means END data byte */
-	ESC_ESC = 0335 /* 0xDD, ESC ESC_ESC means ESC data byte */
+	END     = 192 /* 0xC0 indicates end of packet */
+	ESC     = 219 /* 0xDB, indicates byte stuffing */
+	ESC_END = 220 /* 0xDC, ESC ESC_END means END data byte */
+	ESC_ESC = 221 /* 0xDD, ESC ESC_ESC means ESC data byte */
 )
 
 func (s *Writer) WritePacket(p []byte) error {

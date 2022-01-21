@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/Lobaro/slip"
 	"bytes"
+
+	"github.com/meandrewdev/slip"
 )
 
 func main() {
